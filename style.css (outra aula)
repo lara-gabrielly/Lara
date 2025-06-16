@@ -1,3 +1,4 @@
+
 body {
     background-color: palevioletred;
     font-family: "Bai Jamjuree", sans-serif;
@@ -19,6 +20,8 @@ body {
     text-align: center;
     background-color: aqua;
     height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
 }
 
 .cartao__conteudo h3 {
@@ -29,7 +32,31 @@ body {
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+    backface-visibility: hidden;
 }
+
+.cartao:hover .cartao__conteudo{
+    transform: rotateY(180deg);
+}
+
+.cartão__conteúdo__pergunta, 
+.cartão__conteúdo__resposta{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: black;
